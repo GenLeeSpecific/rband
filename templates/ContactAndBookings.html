@@ -1,4 +1,26 @@
 <div>
-<h1>Contact and Bookings</h1>
+<h2>Let us entertain you!</h2>
 
 </div>
+<form ng-submit="submit()" class="form-horizontal" novalidate>
+      		<label>Type of Event:</label><br>
+      		<select ng-model="selectedCar">
+				    <option  ng-repeat="car in cars" >Wedding</option>
+				    <option  ng-repeat="car in cars" >Corporate</option>
+				    <option  ng-repeat="car in cars" >Other</option>
+				</select>
+      		<br>
+      		<label>If other, please give more detail:</label><br>
+      		<input type="text" ng-model="user.lastname"/>
+      		<br>
+      		<label>Date of Event: (Check the calendar below for available dates)</label><br>
+      		<input type="text" ng-model="user.age"/>
+      		<br>
+      		<label>Your Name: </label><br>
+      		<input type="text" ng-model="user.age"/>
+      		<br>
+      		<label>Your Email: </label><br>
+      		<input type="text" ng-model="user.age"/>
+      		<br>
+      		<button class="btn">Submit</button>
+</form>
