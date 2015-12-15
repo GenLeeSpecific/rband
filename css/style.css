@@ -1,0 +1,79 @@
+/* put your css here */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+
+#container
+{
+	display: flex;		/* makes container a flexbox*/
+	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
+	box-sizing:border-box;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:1050px;	 
+}
+
+
+.bottom_button{
+	display: flex;
+	box-sizing:border-box;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	background-color: #c5b358; /* colour of the button */
+	text-align: center;
+	padding: 1em .75em;
+	text-decoration: none;
+	color: #fff; /* Text Colour */
+
+}
+
+.card_bottom{
+	display: flex;
+	flex-flow:column;
+}
+
+.card{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	max-width: 2000px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff; /* colour of the box it is in */
+}
+.music{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	max-width: 500px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff; /* colour of the box it is in */
+}
+.bios{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	max-width: 800px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff; /* colour of the box it is in */
+}
+/*************************
+Navigation
+
+**************************/
+
+
+.underline{
+  text-decoration:underline;
+}
+.border{
+  border: solid 5px #ccc;
+}
