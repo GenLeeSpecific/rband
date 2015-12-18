@@ -1,0 +1,108 @@
+<style>
+body {
+  animation-duration: 6s;
+  animation-name: bganimate;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+h2 { 
+	  animation-duration: 5s;
+  	 animation-name: explode;
+  	 animation-timing-function: ease;
+     animation-fill-mode: forwards;
+  	 font-family: 'Dosis', sans-serif;
+	   font-weight: 700;
+  	 text-align: center;
+     text-transform: uppercase;
+	}
+h3 { 
+     animation-duration: 7s;
+     animation-name: subhead;
+     animation-fill-mode: forwards;
+     font-family: 'Dosis', sans-serif;
+     font-weight: 700;
+     text-align: center;
+     margin-top: 5px;
+  }
+img { 
+     animation-duration: 3s;
+     animation-name: subhead;
+     animation-fill-mode: forwards;
+     font-family: 'Dosis', sans-serif;
+     font-weight: 700;
+     text-align: center;
+     margin-top: 5px;
+  }
+
+@keyframes explode {
+  0% {
+    font-size: 10%;
+    opacity: 0;
+    color: grey;
+  }
+  100% {
+    font-size: 4em;
+    color: white;
+    opacity: 1;
+  }
+}
+@keyframes subhead {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+    opacity: 1;
+  }
+}
+@keyframes bganimate {
+  0% {
+    background-color: #54403C;
+  }
+  100% {
+    background-color: #31c5c7;
+  }
+}
+.container { width: 80%; margin-left:auto;margin-right: auto; margin-top: 10em;}
+</style>
+<div class="container">   
+	   <h2>The Swing Kings</h2>
+     <h3>With over 20 years experience of performing live at numerous events throughout Ireland. They are a 'must see' band, wheter in their intimate gigs or at your Wedding & Corporate Event.</h3>
+    <p align="center">
+      <img src="images/monkees.jpg" alt="Smiley face" width="284" height="177"></img>
+    <img src="images/cover3.jpg" alt="Smiley face" width="284" height="177"></img>
+    <img src="images/beatles.jpg" alt="Smiley face" width="284" height="177"></img>
+    </p>
+  </div>
+  	
+<br><br><br>
+
+<div id="container" class="foot-container">
+			<div class='foot'>	
+				<p class="foot_para signup-text">
+				<form ng-submit="submit()" class="form-horizontal" novalidate>
+      		<label>Sign-up to our <label>Newsletter:
+					<input type="checkbox" ng-model="checkboxModel.newsletter">
+				</label>
+				<label>Mailing List:
+					<input type="checkbox" ng-model="checkboxModel.mailing">
+				</label></label><br>
+      		<input type="text" ng-model="user.firstname" size='20'/>
+      		
+      		<button class="btn">Submit</button>
+</form>
+
+
+				</p></div>
+				<div class='foot'>
+				<p class="foot_para terms-text" align="center">
+				  <a href="#/contact">Terms & Conditions</a> ~ <a href="#/contact">Contact us</a>
+				</p>
+			</div>
+			<div class='foot'>
+				<p class="foot_para sm-text" align="right"> Check us out on: <img src="images/md.jpg" alt="Smiley face" width="50" height="50" style="float:right">
+				  
+				</p>
+			</div>
+		</div>

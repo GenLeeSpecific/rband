@@ -1,37 +1,67 @@
-<div>
+<div >
 <h1>Members Bios</h1>
 
 </div>
-<div id="container" class="weddings-corporate-container">
+<div id="container" class='col-md-4'><body ng-app='myApp'>
+ <div ng-controller='PromiseController'>
+     <p ng-hide='PromiseComplete'> </p>
+  Check out our ~ {{message}} 
+</div>
+</body>
+</div>
+<div id="container" class='col-md-12'>
 <div class='bios'>
 <h4>Mikey Jones - Singer/Piano</h4>
-<p><img src="images/dj.jpg" alt="Smiley face" width="100" height="100" style="float:left">Mikey is from a musical family who have been entertaining Irish people for several decades. Mikeys sulty voice is sure to make you want to get up and dance! <br>He has thought himself piano and his skill is something to behold.<br>
+<p><img src="images/dj.jpg" alt="Smiley face" width="100" height="100" style="float:left">
+Mikey is from a musical family who have been entertaining Irish people for several decades. Mikeys sulty voice is sure to make you want to get up and dance! <br>He has thought himself piano and his skill is something to behold.<br>
 <strong>Favourite Song:</strong> Beyond the Sea</p>
 
-<h4>Pat 'rat-a-tat-'Byrne - Drums/Singer</h4>
-<p><img src="images/md.jpg" alt="Smiley face" width="100" height="100" style="float:right">Pat has been drumming away on every surface since he was a toddler. He is the beat setter in the band, making sure you are swinging at a nice speed.<br>
-But what about his singing ability? Wait 'til you hear it boom out some of the classics!<br>
+<h4>Pat 'rat-a-tat' Byrne - Drums/Singer</h4>
+<p><img src="images/md.jpg" alt="Smiley face" width="100" height="100" style="float:right">
+Pat has been drumming away on every surface since he was a toddler. He is the beat setter in the band, making sure you are swinging at a nice speed.<br>
+But what about his singing ability? Wait 'til you hear him boom out some of the classics!<br>
 <strong>Favourite Song:</strong> King of the Swingers</p>
-<h4>Mikey Jones - Singer/Piano</h4>
-<p><img src="images/mn.jpg" alt="Smiley face" width="100" height="100" style="float:left">Mikey is from a musical family who have been entertaining Irish people for several decades. Mikeys sulty voice is sure to make you want to get up and dance! <br>He has thought himself piano and his skill is something to behold.<br>
-<strong>Favourite Song:</strong> Beyond the Sea</p>
+<h4>Johnny White - Double Bass</h4>
+<p><img src="images/mn.jpg" alt="Smiley face" width="100" height="100" style="float:left">
+Mikey is from a musical family who have been entertaining Irish people for several decades. Mikeys sulty voice is sure to make you want to get up and dance! <br>He has thought himself piano and his skill is something to behold.<br>
+<strong>Favourite Song:</strong> Mr. Pitiful</p>
 
-<h4>Pat 'rat-a-tat-'Byrne - Drums/Singer</h4>
-<p><img src="images/pt.jpg" alt="Smiley face" width="100" height="100" style="float:right">Pat has been drumming away on every surface since he was a toddler. He is the beat setter in the band, making sure you are swinging at a nice speed.<br>
-But what about his singing ability? Wait 'til you hear it boom out some of the classics!<br>
-<strong>Favourite Song:</strong> King of the Swingers</p>
+<h4>Tom 'Flash' Flemming  - Trumpet</h4>
+<p><img src="images/pt.jpg" alt="Smiley face" width="100" height="100" style="float:right">
+Pat has been drumming away on every surface since he was a toddler. He is the beat setter in the band, making sure you are swinging at a nice speed.<br>
+But what about his singing ability? Wait 'til you hear him boom out some of the classics!<br>
+<strong>Favourite Song:</strong> Mack the Knife</p>
 
 </div>
 </div>
 
-<div id="container" class="weddings-corporate-container">
-			<div class='bios'>
-				<button ng-click="toggle('weddings');" class="bottom_button">Weddings</button>	
-				<button ng-click="toggle('corporate');" class="bottom_button">Corporate</button>
-				<p class="bios_para corporate-text">Corporate text</p>
-				<p class="bios_para weddings-text">Once you join a Code Institute Bootcamp you will be taken on an accelerated contextualised learning path across 3 streams. Nothing is learned in isolation.We contextualise the content so that the knowledge and skills gained in each learning unit feeds into, and is expanded upon, within the next unit.The outputs of each stream will be a project. </p>
+<br><br><br>
+
+<div id="container" class='col-md-12'>
+			<div class='foot'>	
+				<p class="foot_para signup-text">
+				<form ng-submit="submit()" class="form-horizontal" novalidate>
+      		<label>Sign-up to our <label>Newsletter:
+					<input type="checkbox" ng-model="checkboxModel.newsletter">
+				</label>
+				<label>Mailing List:
+					<input type="checkbox" ng-model="checkboxModel.mailing">
+				</label></label><br>
+      		<input type="text" ng-model="user.firstname" size='20'/>
+      		
+      		<button class="btn">Submit</button>
+</form>
+
+
+				</p></div>
+				<div class='foot'>
+				<p class="foot_para terms-text" align="center">
+				  <a href="#/contact">Terms & Conditions</a> ~ <a href="#/contact">Contact us</a>
+				</p>
+			</div>
+			<div class='foot'>
+				<p class="foot_para sm-text" align="right"> Check us out on: <img src="images/md.jpg" alt="Smiley face" width="50" height="50" style="float:right">
+				  
+				</p>
 			</div>
 		</div>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="javascript/script.js"></script>

@@ -1,0 +1,21 @@
+{
+  "name": "band-project",
+  "version": "0.0.1",
+  "homepage": "https://github.com/GenLeeSpecific/rband",
+  "authors": "Will",
+  "description": "An Angular app for a music band",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.1.4"
+  }
+}
