@@ -8,20 +8,17 @@
 <h2>Let us entertain you!</h2>
 </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-10">
 <form ng-submit="submit()" class="form-horizontal" novalidate>
       		<label>Type of Event:</label><br>
-      		<select ng-model="selectedCar" size='10'>
+      		<select ng-model="selectedCar">
 				    <option  ng-repeat="wedding in weddings" >Wedding</option>
 				    <option  ng-repeat="corporate in corporates" >Corporate</option>
 				    <option  ng-repeat="other in others" >Other</option>
 				</select>
       		<br>
-      		
-      		<div class="row">
       			<label>If other, please give more detail:</label><br>
-      			<input class="col-md-8" type="text" ng-model="user.lastname" />
-      		</div>
+      			<textarea  rows="5" id="comment"></textarea>
       		<br>
       		<label>Date of Event: (Check out our Google calendar for available dates)</label><br>
       		<input type="text" ng-model="user.age"/>
@@ -37,36 +34,3 @@
 
 </div>
 
-<br><br>
-
-<div id="container" class="col-md-12">
-			<div class='foot'>	
-				<p class="foot_para signup-text">
-				<form ng-submit="submit()" class="form-horizontal" novalidate>
-      		<label>Sign-up to our <label>Newsletter:
-					<input type="checkbox" ng-model="checkboxModel.newsletter">
-				</label>
-				<label>Mailing List:
-					<input type="checkbox" ng-model="checkboxModel.mailing">
-				</label></label><br>
-      		<input type="text" ng-model="user.firstname" size='20'/>
-      		
-      		<button class="btn">Submit</button>
-</form>
-
-
-				</p></div>
-				<div class='foot'>
-				<p class="foot_para terms-text" align="center">
-					<a href="#/contact">Terms & Conditions</a> ~ <a href="#/contact">Contact us</a>
-				  
-				</p>
-			</div>
-			<div class='foot'>
-				<p class="foot_para sm-text" align="right"> Check us out on: <img src="images/md.jpg" alt="Smiley face" width="50" height="50" style="float:right">
-				  
-				</p>
-			</div>
-		</div>
-
-  

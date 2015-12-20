@@ -16,7 +16,7 @@ html {
 	margin-right:auto;
 	margin-left:auto;
 	max-width:2050px;
-
+	
 }
 
 
@@ -89,14 +89,7 @@ html {
     margin-bottom:100px;
     /* Height of footer*/
 }
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:90px;
-    background:#72b9c7;
-}
+
 
 #radiusTest{
         width: 100px;
@@ -129,11 +122,11 @@ Navigation
 MEHRAN's FOOTER
 *********************************/
 .main-footer {
-	height: 60px;
+	height: 50px;
 	background-color: #72b9c7;
 }
 
-/* Lastly, apply responsive CSS fixes as necessary */
+/* NOTE: WHY DO U THINK IT IS USEFUL */
 @media (max-width: 767px) {
 	.main-footer {
 		margin-left: -20px;

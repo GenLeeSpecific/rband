@@ -8,47 +8,14 @@
 <div id="container" class="weddings-corporate-container">
 			<div class='card'>
 				<button ng-click="toggle('weddings');" class="bottom_button">Weddings</button>	
-				<p class="card_para weddings-text">In choosing The Swing Kings to perform your wedding music, you have the option to select any or all of a whole host of wedding music, such as:
+				<p class="card_para weddings-text" ng-show=”textVisible”>In choosing The Swing Kings to perform your wedding music, you have the option to select any or all of a whole host of wedding music, such as:
 				<br><strong>Ceremony Wedding Music</strong><br>The Swing Kings can provide the ideal musical accompaniment for this part of your big day, be it a chapel or a civil service, with our wedding ceremony music options.
 				<br><strong>Pre Dinner Wedding Music</strong><br> Establishing a warm and welcoming ambiance as guests arrive at your wedding reception in the afternoon/pre-dinner time frame can be achieved with the perfect musical elements we offer. The Swing Kings can provide either of two afternoon/pre-dinner musical services
 				<br><strong>Evening Wedding Music</strong><br> We set the perfect tone for our wedding evening music – a performance that comprises those timeless classic swing and jazz songs from the 60s, 70s, 80s & 90s plus unique interpretations of contemporary tracks that are currently featuring in the charts.
 				<br><strong>Late Night Wedding Music</strong><br> The Swing Kings collaborate with a long-established and reliable company that provide a professional and expert Late Night DJ service.
 					The Late Night DJ will begin immediately after The Swing Kings’s live performance.  This allows the late-night party to continue well into the small hours!</p>
 				<button ng-click="toggle('corporate');" class="bottom_button">Corporate</button>
-				<p class="card_para corporate-text">Having performed in practically every venue of note across Ireland as well as having played at some of Ireland’s most notable & illustrious weddings and Corporate functions you’re not only guaranteed knowledge and experience, but most importantly, an energetic, exciting, dance-floor packed night for your and your guests! <br>Enhance your corporate celebration or product launch by adding a touch of pizzazzzz!!! The Swing Kings not only get intimate with the type of business you are running but find out as much as possible about your special event. Whether it’s your annual sales conference, or rewards night, a product launch, award ceremony or team building weekend The Swing Kings know how to mazimise the vibe always leading to great moral and positive work-attitude.<br>Enquire with us and ask us to innovte on your behalf. We’ll generate some unique ideas that’ll excite your interest and energise your clients and colleagues alike.</p>
+				<p class="card_para corporate-text" ng-show=”textVisible”>Having performed in practically every venue of note across Ireland as well as having played at some of Ireland’s most notable & illustrious weddings and Corporate functions you’re not only guaranteed knowledge and experience, but most importantly, an energetic, exciting, dance-floor packed night for your and your guests! <br>Enhance your corporate celebration or product launch by adding a touch of pizzazzzz!!! The Swing Kings not only get intimate with the type of business you are running but find out as much as possible about your special event. Whether it’s your annual sales conference, or rewards night, a product launch, award ceremony or team building weekend The Swing Kings know how to mazimise the vibe always leading to great moral and positive work-attitude.<br>Enquire with us and ask us to innovte on your behalf. We’ll generate some unique ideas that’ll excite your interest and energise your clients and colleagues alike.</p>
 			</div>
 		</div>
 
-
-
-
-
-<br><br><br>
-<div id="container" class="foot-container">
-			<div class='foot'>	
-				<p class="foot_para signup-text">
-				<form ng-submit="submit()" class="form-horizontal" novalidate>
-      		<label>Sign-up to our <label>Newsletter:
-					<input type="checkbox" ng-model="checkboxModel.newsletter">
-				</label>
-				<label>Mailing List:
-					<input type="checkbox" ng-model="checkboxModel.mailing">
-				</label></label><br>
-      		<input type="text" ng-model="user.firstname" size='20'/>
-      		
-      		<button class="btn">Submit</button>
-</form>
-
-
-				</p></div>
-				<div class='foot'>
-				<p class="foot_para terms-text" align="center">
-				  <a href="#/contact">Terms & Conditions</a> ~ <a href="#/contact">Contact us</a>
-				</p>
-			</div>
-			<div class='foot'>
-				<p class="foot_para sm-text" align="right"> Check us out on: <img src="images/md.jpg" alt="Smiley face" width="50" height="50" style="float:right">
-				  
-				</p>
-			</div>
-		</div>
